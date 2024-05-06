@@ -1,0 +1,52 @@
+
+<!DOCTYPE html5>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!--Title of the survey-->
+    <h1 id="title">Fashion Model Survey Form</h1>
+    <!--Description of the survey-->
+    <p id="description">Thank you for taking the time to fill out your information!!</p>
+    <!--Survey Form-->
+    <form id="survey-form">
+    <fieldset>
+      <!--Name of the participant-->
+      <label for="name" id="name-label">Name: <input type="text" id="name" name="name" placeholder="Enter your name" class="inline" required /></label>
+      <!--Email of the participant-->
+      <label for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="Enter your email" class="inline" required /></label>
+      <!--Age of the participant-->
+      <label for="number" id="number-label">Age: <input type="number" id="number" name="number" min="18" max="120" placeholder="Enter your age" class="inline" /></label>
+      <!--Gender of the participant-->
+      <label for="dropdown" id="gender">What is your gender?
+        <select id="dropdown" name="dropdown" class="inline">
+          <option value="">(select one)</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Other</option>
+        </select>
+      </label>
+      </fieldset>
+      <fieldset>    <!--Uniqueness of the participant--> <legend>Do you dress to be unique or fit in?</legend>
+      <label for="unique"><input id="unique" type="radio" name="uniqueness" value="4" checked /> Unique </label>
+      <label for="in-between"><input id="in-between" type="radio" name="uniqueness" value="5" /> In-Between </label>
+      <label for="fitting-in"><input id="fitting-in" type="radio" name="uniqueness" value="6" /> To Fit In </label>
+      <!--Favourite fabrics of the participant-->
+      <legend>What are your favourite fabrics?</legends>
+      <label for="cotton"><input id="cotton" type="checkbox" name="cotton" value="7"/> Cotton </label>
+      <label for="lycra"><input id="lycra" type="checkbox" name="lycra" value="8" /> Lycra </label>
+      <label for="jeans"><input id="jeans" type="checkbox" name="jeans" value="9"/> Jeans </label>
+      <label for="silk"><input id="silk" type="checkbox" name="silk" value="10" /> Silk </label>
+      <label for="linen"><input id="linen" type="checkbox" name="linen" value="11" /> Linen </label>
+      <label for="other"><input id="other" type="checkbox" name="other" value="12" /> Other </label>
+      <label for="other-description">If other, specify below:<textarea id="other-description" name="other-description" rows="3" cols="30" placeholder="Please specify..."></textarea>
+      </label>
+      </fieldset>
+      <!--Submit button-->
+      <input id="submit" type="submit"/>
+    </form>
+  </body>
+</html>
